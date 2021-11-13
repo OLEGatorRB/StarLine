@@ -1,0 +1,39 @@
+.content {
+	margin: 0;
+	padding: 30px 10px;
+
+	color: #000;
+
+	background-color: #fff;
+}
+
+.content h1 {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+
+	font-size: 20px;
+	line-height: 31px;
+	color: #019ade;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.content img {
+	width: 100%;
+}
+.intro {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.content__description {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
