@@ -1,27 +1,28 @@
 .banner {
-	margin: 0;
-	padding: 0;
-
-	font-size: 20px;
-	line-height: 31px;
-	color: #fff;
-
+	height: 50vh;
 	background-color: #000;
-	background-image: url(../img/optimize/SL_Arkan.jpg);
+
+	background-image: url(../img/SL_Arkan.jpg);
+	background-size: cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: 0.9;
 }
 
 .banner__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
 	background-color: #000;
-	opacity: 0.5;
+
+	height: 100%;
+	opacity: 0.6;
 }
 
 .banner__title {
-	margin: 0;
-	padding: 100px 10px;
+	font-size: 26px;
+	line-height: 39px;
+	color: #fff;
 
 	text-align: center;
 	text-transform: uppercase;

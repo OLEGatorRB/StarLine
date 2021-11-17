@@ -3,8 +3,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 25px;
   font-weight: 400;
   color: #000;
   background-color: #fff;
@@ -25,27 +25,27 @@ header {
 }
 
 .banner {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  line-height: 31px;
-  color: #fff;
+  height: 50vh;
   background-color: #000;
-  background-image: url(../img/optimize/SL_Arkan.jpg);
+  background-image: url(../img/SL_Arkan.jpg);
+  background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.9;
 }
 
 .banner__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #000;
-  opacity: 0.5;
+  height: 100%;
+  opacity: 0.6;
 }
 
 .banner__title {
-  margin: 0;
-  padding: 100px 10px;
+  font-size: 26px;
+  line-height: 39px;
+  color: #fff;
   text-align: center;
   text-transform: uppercase;
 }
@@ -70,12 +70,15 @@ header {
 
 .content img {
   width: 100%;
+  height: auto;
+  margin-bottom: 15px;
 }
 
 .intro {
   margin: 0;
-  margin-bottom: 10px;
-  padding: 0;
+  margin-bottom: 20px;
+  padding: 0 25px;
+  font-style: italic;
 }
 
 .content__description {
@@ -177,6 +180,6 @@ footer {
   text-align: center;
 }
 
-.webp .banner { background-image: url(../img/optimize/SL_Arkan.webp); }
+.webp .banner { background-image: url(../img/SL_Arkan.webp); }
 
 .webp .content__item::before { background-image: url(../img/optimize/galka.webp); }
