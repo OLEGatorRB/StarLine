@@ -37,3 +37,27 @@
 		margin-bottom: 0;
 	}
 }
+
+.content__item {
+	position: relative;
+	margin-left: 25px;
+	font-weight: bold;
+
+	&::before {
+		content: "";
+
+		position: absolute;
+
+		top: 0;
+		left: -25px;
+
+		width: 20px;
+		height: 20px;
+
+		background-color: #fff;
+		background-image: url(../img/optimize/galka.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 0 -3px;
+	}
+}
