@@ -115,7 +115,6 @@ header {
   margin: 0;
   padding: 0 10px;
   font-size: 16px;
-  font-weight: bold;
   line-height: 25px;
   color: #fff;
   text-align: center;
@@ -157,8 +156,8 @@ header {
 footer {
   margin: 0;
   padding: 30px 10px;
-  font-size: 12px;
-  line-height: 19px;
+  font-size: 16px;
+  line-height: 25px;
   color: #000;
   background-color: #f4f4f4;
 }
