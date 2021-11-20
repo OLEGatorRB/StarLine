@@ -71,7 +71,6 @@ header {
 .content img {
   width: 100%;
   height: auto;
-  margin-bottom: 15px;
 }
 
 .intro {
@@ -79,6 +78,19 @@ header {
   margin-bottom: 20px;
   padding: 0 25px;
   font-style: italic;
+}
+
+.intro--description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: italic;
+}
+
+.content__foto {
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
 }
 
 .content__description {
@@ -89,6 +101,11 @@ header {
 
 .content__description:last-child {
   margin-bottom: 0;
+}
+
+.content__description:first-child {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #000;
 }
 
 .content__item {
