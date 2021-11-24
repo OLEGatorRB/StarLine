@@ -19,6 +19,17 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 header {
   background-color: #fff;
   padding: 20px 10px;
@@ -105,16 +116,15 @@ header {
 
 .content__description:first-child {
   margin-bottom: 20px;
-  border-bottom: 1px solid #000;
 }
 
-.content__item {
+.content__description .content__item {
   position: relative;
   margin-left: 25px;
   font-weight: bold;
 }
 
-.content__item::before {
+.content__description .content__item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -197,6 +207,60 @@ footer {
   text-align: center;
 }
 
+.popup {
+  margin: 0;
+  padding: 20px 0px;
+  padding-top: 60px;
+  position: fixed;
+  top: 15%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 411px;
+  background-color: white;
+  border: 1px solid #000;
+}
+
+.button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  border: 0;
+}
+
+.button::after,
+.button::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  display: block;
+  width: 35px;
+  height: 3px;
+  background-color: #000;
+}
+
+.button::before {
+  transform: rotate(45deg);
+}
+
+.button::after {
+  transform: rotate(-45deg);
+}
+
+.popup__text {
+  margin: 0;
+  padding: 50px;
+  text-align: center;
+}
+
+.not-show {
+  display: none;
+}
+
 .webp .banner { background-image: url(../img/SL_Arkan.webp); }
 
-.webp .content__item::before { background-image: url(../img/optimize/galka.webp); }
+.webp .content__description .content__item::before { background-image: url(../img/optimize/galka.webp); }
