@@ -1,5 +1,5 @@
 var button = document.querySelector(".button");
-var popup = document.querySelector(".popup")
+var popup = document.querySelector(".popup");
 
 button.addEventListener("click", function (evt) {
 	evt.preventDefault();
