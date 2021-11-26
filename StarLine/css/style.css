@@ -209,8 +209,8 @@ footer {
 
 .popup {
   margin: 0;
-  padding: 20px 0px;
-  padding-top: 60px;
+  padding: 0;
+  padding-top: 10px;
   position: fixed;
   top: 0;
   left: 10px;
@@ -220,7 +220,21 @@ footer {
   max-width: 411px;
   height: 80vh;
   background-color: white;
+  background-image: url(../img/optimize/opoup.jpg);
+  background-size: cover;
+  background-position: 50%;
   border: 1px solid #000;
+  color: white;
+}
+
+.popup__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background-color: #000;
+  opacity: 0.6;
+  height: 100%;
 }
 
 .button {
@@ -230,6 +244,7 @@ footer {
   width: 35px;
   height: 35px;
   border: 0;
+  background-color: transparent;
 }
 
 .button::after,
@@ -241,7 +256,7 @@ footer {
   display: block;
   width: 35px;
   height: 3px;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .button::before {
@@ -254,8 +269,11 @@ footer {
 
 .popup__text {
   margin: 0;
-  padding: 50px;
+  padding: 10px;
   text-align: center;
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: bold;
 }
 
 .not-show {
@@ -265,3 +283,5 @@ footer {
 .webp .banner { background-image: url(../img/SL_Arkan.webp); }
 
 .webp .content__description .content__item::before { background-image: url(../img/optimize/galka.webp); }
+
+.webp .popup { background-image: url(../img/optimize/opoup.webp); }

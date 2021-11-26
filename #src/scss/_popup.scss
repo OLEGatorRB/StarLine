@@ -1,7 +1,7 @@
 .popup {
 	margin: 0;
-	padding: 20px 0px;
-	padding-top: 60px;
+	padding: 0;
+	padding-top: 10px;
 	position: fixed;
 
 	top: 0;
@@ -15,8 +15,24 @@
 	height: 80vh;
 
 	background-color: white;
-
+	background-image: url(../img/optimize/opoup.jpg);
+	background-size: cover;
+	background-position: 50%;
 	border: 1px solid #000;
+
+	color: white;
+}
+
+.popup__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	position: relative;
+	background-color: #000;
+	opacity: 0.6;
+
+	height: 100%;
 }
 
 .button {
@@ -26,6 +42,8 @@
 	width: 35px;
 	height: 35px;
 	border: 0;
+
+	background-color: transparent;
 
 	&::after,
 	&::before {
@@ -39,7 +57,7 @@
 		width: 35px;
 		height: 3px;
 
-		background-color: #000;
+		background-color: #fff;
 	}
 
 	&::before {
@@ -52,9 +70,12 @@
 
 .popup__text {
 	margin: 0;
-	padding: 50px;
+	padding: 10px;
 
 	text-align: center;
+	font-size: 22px;
+	line-height: 33px;
+	font-weight: bold;
 }
 
 .not-show {
